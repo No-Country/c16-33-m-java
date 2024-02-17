@@ -12,4 +12,6 @@ INSERT INTO producto(id, nombre, precio, id_categoria) VALUES(4, 'Freno de disco
 INSERT INTO producto(id, nombre, precio, id_categoria) VALUES(5, 'Pedales de plataforma', 50, 5);
 
 
+INSERT INTO orden(id, estado) VALUES(1, 'Creado');
+INSERT INTO orden(id, estado) VALUES (2, 'Orden recogida');
 
