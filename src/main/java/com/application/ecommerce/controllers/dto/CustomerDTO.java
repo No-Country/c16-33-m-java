@@ -4,9 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.query.Order;
+import com.application.ecommerce.entities.Order;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -20,7 +21,7 @@ public class CustomerDTO {
     private String lastName;
     private String cellPhone;
     private String email;
-    private Data birthday;
+    private Date birthday;
     private List<Order> orderList = new ArrayList<>();
 
 }
