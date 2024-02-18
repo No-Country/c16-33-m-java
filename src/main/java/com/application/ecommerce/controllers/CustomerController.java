@@ -3,12 +3,14 @@ package com.application.ecommerce.controllers;
 import com.application.ecommerce.controllers.dto.CustomerDTO;
 import com.application.ecommerce.entities.Customer;
 import com.application.ecommerce.service.ICustomerService;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,15 +26,16 @@ public class CustomerController {
         Optional<Customer> customerOptional = customerService.findById(id);
 
         if (customerOptional.isPresent()){
-            Customer customer = CustomerOptinal.get();
-            CustomerDTO = customerDTO = CustomerDTO.builder()
+            Customer customer = customerOptional.get();
+            CustomerDTO customerDTO = CustomerDTO.builder()
                     .id(customer.getId())
                     .name(customer.getName())
                     .lastName(customer.getLastName())
                     .cellPhone(customer.getCellPhone())
                     .email(customer.getEmail())
-                    .birthday(customer.getBirthday())
-                    .orderList(customer.getOrderList());
+                    .birthday((Date) customer.getBirthday())
+                    .orderList(customer.getOrderList())
+                    .build();
             return ResponseEntity.ok((customerDTO));
         }
         return ResponseEntity.notFound().build();
@@ -44,21 +47,24 @@ public class CustomerController {
                 .stream()
                 .map(customer -> CustomerDTO.builder()
                         .id(customer.getId())
-                        .name(Customer.getName())
-                        .lastName(Customer.LastName())
-                        .cellPhone(Customer.CellPhone())
-                        .email(customer.Email())
-                        .birthday(Customer.Birthday())
-                        .orderList(Customer.getOrderList())
+                        .name(customer.getName())
+                        .lastName(customer.getLastName())
+                        .cellPhone(customer.getCellPhone())
+                        .email(customer.getEmail())
+                        .birthday((Date) customer.getBirthday())
+                        .orderList(customer.getOrderList())
                         .build())
                 .toList();
         return ResponseEntity.ok((customerList));
     }
 
 
+
     @PostMapping("/save")
     public ResponseEntity<?> save(@RequestBody CustomerDTO customerDTO) throws URISyntaxException {
-        if (customerDTO.getName().isBlank() || customerDTO.getLastName().isBlank() || customerDTO.getCellPhone() || customerDTO.getEmail().isBlank() || customerDTO.getBirthday() == null) {
+        if (customerDTO.getName().isBlank() || customerDTO.getLastName().isBlank() ||
+                customerDTO.getCellPhone().isBlank() || customerDTO.getEmail().isBlank() ||
+                customerDTO.getBirthday() == null) {
             return ResponseEntity.badRequest().build();
         }
 
@@ -72,11 +78,11 @@ public class CustomerController {
                 .build();
         customerService.save(customer);
 
-        return ResponseEntity.created(new URI("/api/product/save")).build();
+        return ResponseEntity.created(new URI("/api/customer/save")).build();
 
     }
 
-
+    // ELIMINA UN CLIENTE
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable Long id, @RequestBody CustomerDTO customerDTO) {
         Optional<Customer> customerOptional = customerService.findById(id);

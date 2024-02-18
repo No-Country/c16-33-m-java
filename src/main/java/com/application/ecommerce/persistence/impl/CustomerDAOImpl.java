@@ -12,7 +12,8 @@ import java.util.Optional;
 @Component
 public class CustomerDAOImpl implements ICustomerDAO {
 
-    // Inyeccion de las Dependencias
+
+    // INYECCION DE LAS DEPENDENCIAS
     @Autowired
     private CustomerRepository customerRepository;
 
@@ -35,5 +36,4 @@ public class CustomerDAOImpl implements ICustomerDAO {
     public void deleteById(Long id) {
         customerRepository.deleteById(id);
     }
-
 }

@@ -19,10 +19,8 @@ public class Order {
     @Column(name = "estado")
     private String status;
 
-    /*
     @ManyToOne
     @JoinColumn(name = "id_cliente", nullable = false)
     @JsonIgnore
-    private Costumer idCostumer;
-    */
+    private Customer customer;
 }

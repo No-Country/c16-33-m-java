@@ -21,7 +21,7 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
-    public Optional<Customer> findById(long id) {
+    public Optional<Customer> findById(Long id) {
         return customerDAO.findById(id);
     }
 

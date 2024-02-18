@@ -49,6 +49,6 @@ public class OrderDAOImpl implements IOrderDAO {
     //eliminar orden
     @Override
     public void deleteOrderById(Long id) {
-       orderRepository.deleteById(id);
+        orderRepository.deleteById(id);
     }
 }

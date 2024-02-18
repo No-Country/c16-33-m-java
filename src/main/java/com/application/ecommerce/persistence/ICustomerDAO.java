@@ -1,16 +1,16 @@
 package com.application.ecommerce.persistence;
 
-import org.hibernate.query.Order;
+import com.application.ecommerce.entities.Customer;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface ICustomerDAO {
-    List<Order> findAll();
+    List<Customer> findAll();
 
-    Optional<Order> findById(Long id);
+    Optional<Customer> findById(Long id);
 
-    void save(ICustomerDAO customer);
+    void save(Customer customer);
 
-    void deleteById(long id);
+    void deleteById(Long id);
 }
