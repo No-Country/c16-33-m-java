@@ -14,8 +14,6 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     public Order findOrderByStatus(@Param("status") String status);
 
     //buscar orden por idCliente
-    /*
-    @Query("SELECT o FROM Order o WHERE o.idCostumer = :id_costumer")
-    public Order findOrderByIdCostumer(@Param("idCostumer") Long id_costumer);
-     */
+    @Query("SELECT o FROM Order o WHERE o.customer.id = :idCustomer")
+    public Order findOrderByIdCustomer(@Param("idCustomer") Long id_customer);
 }
