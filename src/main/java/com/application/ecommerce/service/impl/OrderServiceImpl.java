@@ -33,6 +33,11 @@ public class OrderServiceImpl implements IOrderService {
         return orderDAO.findByStatus(status);
     }
 
+    @Override
+    public List<Order> findByIdCustomer(Long idCustomer) {
+        return (List<Order>) orderDAO.findByIdCustomer(idCustomer);
+    }
+
     //guardar una nueva orden
     @Override
     public Order saveOrder(Order order) {

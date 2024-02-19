@@ -33,13 +33,11 @@ public class OrderDAOImpl implements IOrderDAO {
         return Optional.ofNullable((List<Order>) orderRepository.findOrderByStatus(status));
     }
 
-    /*
     //encontrar orden/ordenes por el id del cliente
     @Override
-    public Optional<List<Order>> findByIdCostumer(Long idCostumer) {
-        return orderRepository.findOrderByIdCostumer(idCostumer);
-     */
-
+    public Order findByIdCustomer(Long idCustomer) {
+        return orderRepository.findOrderByIdCustomer(idCustomer);
+    }
     //guardar una nueva orden
     @Override
     public Order saveOrder(Order order) {

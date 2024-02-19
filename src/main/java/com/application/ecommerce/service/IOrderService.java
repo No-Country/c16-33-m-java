@@ -17,7 +17,7 @@ public interface IOrderService {
     Optional<List<Order>> findByStatus(String status);
 
     //encontrar orden/ordenes por el id del cliente
-    //List<Order> findByIdCostumer(Long idCostumer);
+    List<Order> findByIdCustomer(Long idCustomer);
 
     //guardar una nueva orden
     Order saveOrder(Order order);

@@ -17,7 +17,7 @@ public interface IOrderDAO {
     Optional<List<Order>> findByStatus(String status);
 
     //encontrar orden/ordenes por el id del cliente
-    //Optional<List<Order>> findByIdCostumer(Long idCostumer);
+    Order findByIdCustomer(Long idCustomer);
 
     //guardar una nueva orden
     Order saveOrder(Order order);
