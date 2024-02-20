@@ -1,4 +1,4 @@
-package User;
+package com.application.ecommerce.entities;
 
 
 import jakarta.persistence.*;
@@ -25,9 +25,6 @@ public class User implements UserDetails {
     @Column(nullable = false)
     Integer id;
     String username;
-    String lastname;
-    String firstname;
-    String country;
     String password;
     Role role;
 
