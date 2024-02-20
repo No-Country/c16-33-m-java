@@ -13,18 +13,22 @@ TEAM LEADER
 @Amarilys Baptista
  Baptista
 https://www.linkedin.com/in/ve-amarilys-baptista/
+
 QA/TESTERS :white_check_mark::
 @Zulay Peraza
 
 https://www.linkedin.com/in/zulayperaza/
+
 @Sabrina Cecilia Garcia
-  (Proyect Manager Jr.)
+  (Proyect Manager Jr.) 
 https://www.linkedin.com/in/sabrina-cecilia-garcia-28a61b23/
-DISEÑO UX/UI :white_check_mark::
+
+DISEÑO UX/UI
 @Martin Covella
 
 https://www.linkedin.com/in/martin-covella/
-DESARROLLO FRONT-END :white_check_mark::
+
+DESARROLLO FRONT-END 
 @milir23
 
 https://www.linkedin.com/in/roblesmar/
