@@ -29,4 +29,9 @@ public class Product {
     @JsonIgnore
     private Category category;
 
+    @ManyToOne
+    @JoinColumn(name = "id_Cart", nullable = false)
+    @JsonIgnore
+    private Cart cart;
+
 }

@@ -40,5 +40,4 @@ public class Customer {
     @JsonIgnore
     private List<Order> orderList = new ArrayList<>();
 
-
 }
