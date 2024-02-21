@@ -1,6 +1,8 @@
-### Equipo C16-33-m-java
-![https://github.com/No-Country/](https://i.ytimg.com/vi/IeGa5-PcfMU/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDMvP2k7FEOB5DlpvkdkQzm0u4ciQ)
 
+# Equipo C16-33-m-java
+
+
+![https://github.com/No-Country/](https://i.ytimg.com/vi/IeGa5-PcfMU/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDMvP2k7FEOB5DlpvkdkQzm0u4ciQ)
 
 El equipo C16-33-m java ya tiene en marcha el proyecto E-bike! 
 El e-commerce ideal para ti, que necesitas tu bici o accesorios de manera ágil, práctica y segura. ¿Quieres una bici con dichas características?,¿necesitas el repuesto de siempre? nosotros también lo queremos: en E-bike la tienes! :white_check_mark:
@@ -26,7 +28,9 @@ Si aún sigues con dudas, no dejes de contactarte con nuestro E-xcelente equipo:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sabrina_Cecilia_Garcia-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/sabrina-cecilia-garcia-28a61b23/)
 
-### DESARROLLERES FRON-TEND Y UX/UI 🍭🕸️
+## DESARROLLERES FRON-TEND Y UX/UI 🍭🕸️
+
+
 -Fron-tend:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Maria_Milagros_Robles-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/roblesmar/)
@@ -35,7 +39,9 @@ Si aún sigues con dudas, no dejes de contactarte con nuestro E-xcelente equipo:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Martin_Covella-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/martin-covella/)
 
-### DESARROLLADORES BACK-END 🍵
+## DESARROLLADORES BACK-END 🍵
+
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Lucia_Romano-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/luciarmn/)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Axel_Garrido-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/axelgarrido/)
