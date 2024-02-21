@@ -18,14 +18,16 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="user", uniqueConstraints = {@UniqueConstraint(columnNames = {"username"})})
+@Table(name = "usuario", uniqueConstraints = {@UniqueConstraint(columnNames = {"username"})})
 public class User implements UserDetails {
     @Id
     @GeneratedValue
-    @Column(nullable = false)
     Integer id;
+    @Column(nullable = false)
     String username;
+    @Column(nullable = false)
     String password;
+    @Enumerated(EnumType.STRING)
     Role role;
 
     @Override

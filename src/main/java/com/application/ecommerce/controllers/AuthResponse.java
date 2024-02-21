@@ -1,4 +1,4 @@
-package com.application.ecommerce.controllers.dto;
+package com.application.ecommerce.controllers;
 
 
 import lombok.AllArgsConstructor;
@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AuthResponse {
+
     String token;
 
 }

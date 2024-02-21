@@ -1,4 +1,4 @@
-package com.application.ecommerce.controllers.dto;
+package com.application.ecommerce.controllers;
 
 
 import lombok.AllArgsConstructor;
@@ -10,12 +10,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RegisterRequest {
+public class LoginRequest {
+
     String username;
     String password;
-    String firstname;
-    String lastname;
-    String country;
-
 
 }
