@@ -23,4 +23,8 @@ public class Order {
     @JoinColumn(name = "id_cliente", nullable = false)
     @JsonIgnore
     private Customer customer;
+
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL, fetch = FetchType.LAZY,orphanRemoval = true)
+    private Cart cart;
+
 }
