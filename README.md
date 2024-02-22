@@ -28,7 +28,7 @@ Si aún sigues con dudas, no dejes de contactarte con nuestro E-xcelente equipo:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sabrina_Cecilia_Garcia-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/sabrina-cecilia-garcia-28a61b23/)
 
-## DESARROLLERES FRON-TEND Y UX/UI 🍭🕸️
+## DESARROLLADORES FRONT-END Y UX/UI 🍭🕸️
 
 
 -Fron-tend:
