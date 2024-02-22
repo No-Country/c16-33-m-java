@@ -19,11 +19,13 @@ public class CategoryDAOImpl implements ICategoryDAO {
 
     @Override
     public List<Category> findAll() {
+
         return (List<Category>) categoryRepository.findAll();
     }
 
     @Override
     public Optional<Category> findById(Long id) {
+
         return categoryRepository.findById(id);
     }
 
