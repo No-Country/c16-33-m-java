@@ -10,7 +10,7 @@ El e-commerce ideal para ti, que necesitas tu bici o accesorios de manera ágil,
 Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solución a tus necesidades.
 
 
-### Link a la documentacion del Proyecto https://sabrinagarcia82.atlassian.net/l/cp/11L16MjG
+### Link a  Trello y la documentacion del Proyecto https://trello.com/b/TM5clMob/equipo-e-commerce-repuestos-de-bicicletas-espec%C3%ADfica
 
 
 ## TEAM LEADER
