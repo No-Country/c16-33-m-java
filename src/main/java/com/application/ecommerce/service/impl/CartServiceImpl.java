@@ -1,39 +1,48 @@
 package com.application.ecommerce.service.impl;
 
 import com.application.ecommerce.entities.Cart;
-import com.application.ecommerce.repository.CartRepository;
+import com.application.ecommerce.persistence.ICartDAO;
 import com.application.ecommerce.service.ICartService;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
 @Service
-@RequiredArgsConstructor
 public class CartServiceImpl implements ICartService {
-    private final CartRepository cartRepository;
+
+    @Autowired
+    private ICartDAO cartDAO;
 
     @Override
     public List<Cart> findAll() {
-        return cartRepository.findAll();
+        return cartDAO.findAll();
     }
 
-    @SuppressWarnings("null")
     @Override
     public Optional<Cart> findById(Long id) {
-        return cartRepository.findById(id);
+        return cartDAO.findById(id);
     }
 
-    @SuppressWarnings("null")
     @Override
-    public void save(Cart cart) {
-        cartRepository.save(cart);
+    public Optional<Cart> findCartByIdOrder(Long idOrder) {
+        return cartDAO.findCartByIdOrder(idOrder);
     }
 
-    @SuppressWarnings("null")
     @Override
-    public void deleteById(Long id) {
-        cartRepository.deleteById(id);
+    public Optional<Cart> findCartByTotal(BigDecimal total) {
+        return cartDAO.findCartByTotal(total);
+    }
+
+    @Override
+    public Cart saveCart(Cart cart) {
+        return cartDAO.saveCart(cart);
+    }
+
+    @Override
+    public void deleteCartById(Long id) {
+        cartDAO.deleteCartById(id);
     }
 }

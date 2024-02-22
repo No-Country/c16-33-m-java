@@ -28,6 +28,6 @@ public class Order {
     private Customer customer;
 
     @OneToOne(mappedBy = "order", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
-    @JsonIgnore
-    private List<Cart> cartList = new ArrayList<>();
+    private Cart cart;
+
 }

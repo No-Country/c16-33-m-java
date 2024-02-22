@@ -1,15 +1,16 @@
 package com.application.ecommerce.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.util.List;
-import java.util.ArrayList;
 
-@Setter
-@Getter
+@Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -24,16 +25,20 @@ public class Cart {
     @Column(name = "cantidad")
     private int quantity;
 
+    @Column(name = "precio_unidad")
+    private BigDecimal unitPrice;
+
     @Column(name = "total")
     private BigDecimal total;
 
-    @OneToOne
-    @JoinColumn(name = "id_Orden", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_producto", nullable = false)
     @JsonIgnore
-    private Order order;
+    private Product product;
 
-    @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
-    @JsonIgnore
-    private List<Product> productList = new ArrayList<>();
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_orden", nullable = false)
+    @JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+    private Order order;
 
 }

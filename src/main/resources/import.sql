@@ -17,4 +17,4 @@ INSERT INTO cliente(id, nombre, apellido, celular, email, cumpleanos) VALUE (2, 
 INSERT INTO orden(id, estado, id_cliente) VALUES(1, 'Creado', 1);
 INSERT INTO orden(id, estado, id_cliente) VALUES (2, 'Orden recogida', 2);
 
-INSERT INTO carrito(id, id_Orden, producto, quantity, total ) VALUE(1, 1, 1, 2, 20000);
+INSERT INTO carrito(id, cantidad, precio_unidad, total, id_producto, id_orden) VALUES (1, 3, 50, 150, 5, 1);

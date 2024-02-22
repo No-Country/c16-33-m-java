@@ -1,92 +1,85 @@
 package com.application.ecommerce.controllers;
 
 import com.application.ecommerce.controllers.dto.CartDTO;
-import com.application.ecommerce.controllers.dto.ProductDTO;
 import com.application.ecommerce.entities.Cart;
+import com.application.ecommerce.entities.Customer;
 import com.application.ecommerce.entities.Order;
-import com.application.ecommerce.entities.Product;
 import com.application.ecommerce.service.ICartService;
+import com.application.ecommerce.service.ICustomerService;
+import com.application.ecommerce.service.IOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
-@RestController
+@Controller
 @RequestMapping("/api/cart")
 public class CartController {
 
-    private static final int List = 0;
     @Autowired
     private ICartService cartService;
+    @Autowired
+    private IOrderService orderService;
+    @Autowired
+    private ICustomerService customerService;
 
-    @GetMapping("/find/{id}")
-    public ResponseEntity<?> findById(@PathVariable Long id) {
+    // buscar carrito con id
+    @GetMapping("/{id}")
+    public ResponseEntity<String> findCartById(@PathVariable("id") Long id) {
         Optional<Cart> cartOptional = cartService.findById(id);
-
         if (cartOptional.isPresent()) {
-            Cart cart = cartOptional.get();
-            CartDTO cartDTO = CartDTO.builder()
-                    .id(cart.getId())
-                    .idOrder(cart.getOrder().getId())
-                    .productList(cart.getProductList())
-                    .quantity(cart.getQuantity())
-                    .total(cart.getTotal())
-                    .build();
-            return ResponseEntity.ok(cartDTO);
+            Cart foundCart = cartOptional.get();
+            if (foundCart.getId().equals(id)) {
+                return new ResponseEntity<>("Carrito encontrado", HttpStatus.OK);
+            }
         }
-        return ResponseEntity.notFound().build();
+        return new ResponseEntity<>("Carrito no encontrado", HttpStatus.NOT_FOUND);
     }
 
-    @GetMapping("/findAll")
-    public ResponseEntity<List<CartDTO>> findAll() {
-        List<CartDTO> cartList = List < CartDTO > cartService.findAll()
-                .stream()
-                .map(cart -> CartDTO.builder()
-                        .id(cart.getId())
-                        .idOrder(cart.getOrder().getId())
-                        .productList(cart.getProductList()) // <-- Esto podría necesitar ser corregido según tu modelo
-                                                            // de datos
-                        .quantity(cart.getQuantity())
-                        .total(cart.getTotal())
-                        .build());
-        // <- Esta línea no es necesaria
-        return ResponseEntity.ok(cartList);
-    }
+    // crear un nuevo carrito y guardarlo
+    @PostMapping("/")
+    public ResponseEntity<Object> saveCart(@RequestBody CartDTO cartDTO, @RequestParam Long customerId) {
 
-    @PostMapping("/save")
-    public ResponseEntity<?> save(@RequestBody CartDTO cartDTO) throws URISyntaxException {
-        if (cartDTO == null || cartDTO.getIdOrder() == null || cartDTO.getProductList() == null ||
-                cartDTO.getQuantity() <= 0 || cartDTO.getTotal() == null) {
-            return ResponseEntity.badRequest().build();
+        if (Objects.isNull(cartDTO) || Objects.isNull(cartDTO.getQuantity()) || Objects.isNull(cartDTO.getTotal())
+                || Objects.isNull(cartDTO.getUnitPrice()) || Objects.isNull(cartDTO.getProduct())) {
+            return new ResponseEntity<>("Request body incompleto", HttpStatus.BAD_REQUEST);
         }
 
-        try {
-            Cart cart = Cart.builder()
-                    .order(new Order()) // Asumo que Order tiene un constructor que toma el id
-                    .productList(cartDTO.getProductList()) // <-- Esto podría necesitar ser corregido según tu modelo de
-                                                           // datos
-                    .quantity(cartDTO.getQuantity())
-                    .total(cartDTO.getTotal())
-                    .build();
-            cartService.save(cart);
-            return ResponseEntity.created(new URI("/api/cart/save")).build();
-        } catch (Exception e) {
-            return ResponseEntity.badRequest().build();
+        Optional<Customer> customerOptional = customerService.findById(customerId);
+        if (customerOptional.isEmpty()) {
+            return new ResponseEntity<>("Cliente no encontrado", HttpStatus.NOT_FOUND);
         }
+
+        Customer customer = customerOptional.get();
+
+        Order order = new Order();
+        order.setCustomer(customer);
+        order.setStatus("pending");
+        orderService.saveOrder(order);
+
+        Cart cart = new Cart();
+        cart.setOrder(order);
+        cart.setProduct(cartDTO.getProduct());
+        cart.setQuantity(cartDTO.getQuantity());
+        cart.setUnitPrice(cartDTO.getUnitPrice());
+        cart.setTotal(cartDTO.getTotal());
+
+        Cart savedCart = cartService.saveCart(cart);
+
+        return ResponseEntity.ok(savedCart);
     }
 
+    // borrar un carrito
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> deleteById(@PathVariable Long id) {
-        if (id != null) {
-            cartService.deleteById(id);
-            return ResponseEntity.ok("Producto Eliminado");
+    public ResponseEntity<String> deleteCart(@PathVariable("id") Long id) {
+        if (Objects.nonNull(id)) {
+            cartService.deleteCartById(id);
+            return new ResponseEntity<>("Carrito cancelado", HttpStatus.OK);
         }
-
-        return ResponseEntity.badRequest().build();
+        return new ResponseEntity<>("No se pudo borrar el carrito", HttpStatus.NO_CONTENT);
     }
-
 }
