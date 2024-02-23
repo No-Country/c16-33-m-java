@@ -2,7 +2,7 @@
 # Equipo C16-33-m-java
 
 
-<h1 align="center">![https://github.com/No-Country/](https://i.ytimg.com/vi/IeGa5-PcfMU/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDMvP2k7FEOB5DlpvkdkQzm0u4ciQ)</h1>
+![https://github.com/No-Country/](https://i.ytimg.com/vi/IeGa5-PcfMU/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDMvP2k7FEOB5DlpvkdkQzm0u4ciQ)
 
 <h1 align="center"> E-Bike </h1>
 
