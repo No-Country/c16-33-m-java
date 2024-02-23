@@ -10,6 +10,8 @@
 
 
 ![im bici](https://github.com/No-Country/c16-33-m-java/assets/159567884/4fce87c7-94c2-4019-bd74-f457db6ae1ea)
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+
 
 El equipo C16-33-m java ya tiene en marcha el proyecto E-bike! 
 El e-commerce ideal para ti, que necesitas tu bici o accesorios de manera ágil, práctica y segura. ¿Quieres una bici con dichas características?,¿necesitas el repuesto de siempre? nosotros también lo queremos: en E-bike la tienes! :white_check_mark:
