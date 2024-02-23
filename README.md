@@ -1,4 +1,6 @@
 
+   
+ 
 # Equipo C16-33-m-java
 
 
@@ -13,23 +15,60 @@
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
 
+ [Descripción del proyecto](#descripcion-del-proyecto) 
+ [Funcionalidades](#funcionalidades) 
+ [Acceso al proyecto](#acceso-proyecto) 
+ [Tecnologías utilizadas](#tecnologías-utilizadas) 
+ [Team](#team) 
+ [Conclusión](#conclusión)
+ 
+# Descripcion del proyecto
+
 El equipo C16-33-m Java ya tiene en marcha el proyecto E-bike! 
-El e-commerce ideal para ti, que necesitas tu bici o accesorios de manera ágil, práctica y segura. ¿Quieres una bici con dichas características?,¿necesitas el repuesto de siempre? nosotros también lo queremos: en E-bike la tienes! :white_check_mark:
-¿Quieres hacer crecer tu marca y que llegue aún más lejos? E-bike está especializado para hacer crecer tu empresa y sus ingresos, reconoce a sus clientes favoreciendo el intercambio y crecimiento exponencial. :chart_with_upwards_trend:
+El E-commerce ideal para ti que necesitas tu bici o accesorios de manera ágil, práctica y segura. 
+🚴‍♀️¿Quieres una bici con dichas características?,¿necesitas el repuesto de siempre? nosotros también lo queremos: en E-bike la tienes! :white_check_mark:
+🙋‍♂️🙋‍♀️¿Quieres hacer crecer tu marca y que llegue aún más lejos? 
+E-bike está especializado para hacer crecer tu empresa y sus ingresos, reconoce a sus clientes favoreciendo el intercambio y crecimiento exponencial. :chart_with_upwards_trend:
 Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solución a tus necesidades.
 
+# Funcionalidades
 
-### Link a  Trello y la documentacion del Proyecto https://trello.com/b/TM5clMob/equipo-e-commerce-repuestos-de-bicicletas-espec%C3%ADfica
+- Búsqueda y filtrado avanzado de productos por categoría, 
+- Información detallada de cada producto, incluyendo especificaciones técnicas , opiniones de usuarios y valor.
+- Proceso de compra seguro y eficiente .
+- Creación de cuentas de usuario para una experiencia de compra personalizada.
+
+# Acceso al Proyecto
 
 
-## TEAM LEADER
+<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fassets.stickpng.com%2Fimages%2F58482beecef1014c0b5e4a36.png&tbnid=Iq6QBWR6fZqqSM&vet=12ahUKEwiAs7uRssCEAxWps5UCHWuCCtUQMygCegQIARBb..i&imgrefurl=https%3A%2F%2Fwww.stickpng.com%2Fimg%2Ficons-logos-emojis%2Ftech-companies%2Ftrello-logo&docid=p7sXpc12i2D3CM&w=512&h=512&q=trello&hl=es-419&ved=2ahUKEwiAs7uRssCEAxWps5UCHWuCCtUQMygCegQIARBb" alt="Trello" width="20" height="20">
+
+#### [Trello](https://trello.com/b/TM5clMob/equipo-e-commerce-repuestos-de-bicicletas-espec%C3%ADfica) 
+###
+<img src="https://www.figma.com/community/file/1066569825111647722/figma-icon" alt="Figma" width="20" height="20">
+
+
+# Tecnologías utilizadas
+Back-end:
+Base de datos
+Front-end:
+Diseño UX/UI
+QA/Testing: Postman
+
+ 
+
+# Miembros del equipo
+
 Si aún sigues con dudas, no dejes de contactarte con nuestro E-xcelente equipo:
+
+### TEAM LEADER
+
 @Amarilys Baptista
 
  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Amarilys_Baptista-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/ve-amarilys-baptista/)
 
 
-# Linkedin de los Compañeros Desarrolladores:
+
 ### QA Y TESTERS 🧪✅🏁
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Zulay_Peraza-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/zulayperaza/)
 
@@ -37,10 +76,10 @@ Si aún sigues con dudas, no dejes de contactarte con nuestro E-xcelente equipo:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sabrina_Cecilia_Garcia-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/sabrina-cecilia-garcia-28a61b23/)
 
-## DESARROLLADORES FRONT-END Y UX/UI 🍭🕸️
+### DESARROLLADORES FRONT-END Y UX/UI 🍭🕸️
 
+ - Front-end:
 
--Fron-tend:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Maria_Milagros_Robles-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/roblesmar/)
 
@@ -48,7 +87,7 @@ Si aún sigues con dudas, no dejes de contactarte con nuestro E-xcelente equipo:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Martin_Covella-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/martin-covella/)
 
-## DESARROLLADORES BACK-END 🍵
+## #DESARROLLADORES BACK-END 🍵
 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Lucia_Romano-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/luciarmn/)
@@ -62,3 +101,23 @@ Si aún sigues con dudas, no dejes de contactarte con nuestro E-xcelente equipo:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Alejandro_Rey_Vera-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/alejandro-rey-vera-64b932210?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkLZd5wDXSdONOItireNkPA%3D%3D)
 
 
+
+
+
+## Flow Chart
+
+
+```mermaid
+graph LR
+A[Usuario] -- Registro --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
+
+    A[Inicio] --> B[Página Principal];
+    B --> C[Búsqueda y Filtrado];
+    C --> D[Detalles del Producto];
+    D --> E[Agregar al Carrito];
+    E --> F[Proceso de Pago];
+    F --> G[Confirmación de Pedido];
+    
