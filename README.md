@@ -17,7 +17,7 @@
 
  [Descripción del proyecto](#descripcion-del-proyecto) 
  [Funcionalidades](#funcionalidades) 
- [Acceso al proyecto](#acceso-proyecto) 
+ [Acceso al proyecto](#acceso-al-proyecto) 
  [Tecnologías utilizadas](#tecnologías-utilizadas) 
  [Miembros del equipo](#miembros-del-equipo) 
  
@@ -40,6 +40,8 @@ Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solució
 
 # Acceso al Proyecto
 
+Link al producto
+
 
 <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fassets.stickpng.com%2Fimages%2F58482beecef1014c0b5e4a36.png&tbnid=Iq6QBWR6fZqqSM&vet=12ahUKEwiAs7uRssCEAxWps5UCHWuCCtUQMygCegQIARBb..i&imgrefurl=https%3A%2F%2Fwww.stickpng.com%2Fimg%2Ficons-logos-emojis%2Ftech-companies%2Ftrello-logo&docid=p7sXpc12i2D3CM&w=512&h=512&q=trello&hl=es-419&ved=2ahUKEwiAs7uRssCEAxWps5UCHWuCCtUQMygCegQIARBb" alt="Trello" width="20" height="20">
 
@@ -50,9 +52,13 @@ Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solució
 
 # Tecnologías utilizadas
 Back-end:
+
 Base de datos
+
 Front-end:
+
 Diseño UX/UI
+
 QA/Testing: Postman
 
  
