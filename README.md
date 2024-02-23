@@ -44,7 +44,7 @@ Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solució
 
 #### 
 ###
-<img src="https://brandslogos.com/wp-content/uploads/images/large/figma-logo.png"> [Figma](https://www.figma.com/file/Qz1UFGwGJbLgpxo7pWBfjx/E-Bike-show?type=design&node-id=1-578&mode=design&t=RVDHoCMheTiAf0Ik-0)
+<img src="https://brandslogos.com/wp-content/uploads/images/large/figma-logo.png" alt="Figma" width="20" height="20"> [Figma](https://www.figma.com/file/Qz1UFGwGJbLgpxo7pWBfjx/E-Bike-show?type=design&node-id=1-578&mode=design&t=RVDHoCMheTiAf0Ik-0)
 
 URL 
 
