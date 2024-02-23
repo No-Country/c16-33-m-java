@@ -18,9 +18,13 @@
  [Descripción del proyecto](#descripcion-del-proyecto) 
  
  [Funcionalidades](#funcionalidades) 
+ 
  [Acceso al proyecto](#acceso-al-proyecto) 
+ 
  [Tecnologías utilizadas](#tecnologías-utilizadas) 
+ 
  [Miembros del equipo](#miembros-del-equipo) 
+ 
  [Flow Chart](#flow-chart)
  
  
