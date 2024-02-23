@@ -42,14 +42,12 @@ Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solució
 
 Link al producto
 
+<img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Trello-512.png" alt="Trello" width="20" height="20"> [Trello](https://trello.com/b/TM5clMob/equipo-e-commerce-repuestos-de-bicicletas-espec%C3%ADfica) 
 
-<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fassets.stickpng.com%2Fimages%2F58482beecef1014c0b5e4a36.png&tbnid=Iq6QBWR6fZqqSM&vet=12ahUKEwiAs7uRssCEAxWps5UCHWuCCtUQMygCegQIARBb..i&imgrefurl=https%3A%2F%2Fwww.stickpng.com%2Fimg%2Ficons-logos-emojis%2Ftech-companies%2Ftrello-logo&docid=p7sXpc12i2D3CM&w=512&h=512&q=trello&hl=es-419&ved=2ahUKEwiAs7uRssCEAxWps5UCHWuCCtUQMygCegQIARBb" alt="Trello" width="20" height="20">
+#### 
+<img src="https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png" alt="Figma" width="20" height="20"> [Figma](https://www.figma.com/file/Qz1UFGwGJbLgpxo7pWBfjx/E-Bike-show?type=design&node-id=1-578&mode=design&t=RVDHoCMheTiAf0Ik-0)
 
-#### [Trello](https://trello.com/b/TM5clMob/equipo-e-commerce-repuestos-de-bicicletas-espec%C3%ADfica) 
-###
-<img src="https://www.figma.com/community/file/1066569825111647722/figma-icon" alt="Figma" width="20" height="20">
-
-
+URL 
 # Tecnologías utilizadas
 Back-end:
 
