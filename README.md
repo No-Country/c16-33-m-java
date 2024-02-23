@@ -19,7 +19,7 @@
  
  [Funcionalidades](#funcionalidades) 
  
- [Accesos](#accesos) 
+ [Accesos](#acceso) 
  
  [Tecnologías utilizadas](#tecnologías-utilizadas) 
  
