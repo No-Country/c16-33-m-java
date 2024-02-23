@@ -20,6 +20,7 @@
  [Acceso al proyecto](#acceso-al-proyecto) 
  [Tecnologías utilizadas](#tecnologías-utilizadas) 
  [Miembros del equipo](#miembros-del-equipo) 
+ [Flow Chart](#flow-chart)
  
  
 # Descripcion del proyecto
