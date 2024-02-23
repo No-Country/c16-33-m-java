@@ -19,7 +19,7 @@
  
  [Funcionalidades](#funcionalidades) 
  
- [Acceso al proyecto](#acceso-al-proyecto) 
+ [Accesos](#accesos) 
  
  [Tecnologías utilizadas](#tecnologías-utilizadas) 
  
@@ -44,7 +44,7 @@ Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solució
 - Proceso de compra seguro y eficiente .
 - Creación de cuentas de usuario para una experiencia de compra personalizada.
 
-# Acceso al Proyecto
+# Acceso 
 
 <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Trello-512.png" alt="Trello" width="20" height="20"> [Trello](https://trello.com/b/TM5clMob/equipo-e-commerce-repuestos-de-bicicletas-espec%C3%ADfica) 
 
