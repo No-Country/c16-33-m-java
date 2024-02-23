@@ -57,15 +57,15 @@ Link al Proyecto
 
 
 # Tecnologías utilizadas
-Back-end:
+Back-end: Java, SpringBoot
 
-Base de datos
+Base de datos: MySQL
 
-Front-end:
+Front-end: React
 
-Diseño UX/UI
+Diseño UX/UI: Figma, Photoshop
 
-QA/Testing: Postman
+QA/Testing: Postman (API Testing), Manual (Front)
 
  
 
