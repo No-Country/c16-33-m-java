@@ -19,7 +19,7 @@
  [Funcionalidades](#funcionalidades) 
  [Acceso al proyecto](#acceso-proyecto) 
  [Tecnologías utilizadas](#tecnologías-utilizadas) 
- [Miembros del equipo](# Miembros del equipo) 
+ [Miembros del equipo](#miembros del equipo) 
  
  
 # Descripcion del proyecto
