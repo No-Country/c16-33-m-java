@@ -52,5 +52,4 @@ Si aún sigues con dudas, no dejes de contactarte con nuestro E-xcelente equipo:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Alejandro_Rey_Vera-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/alejandro-rey-vera-64b932210?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkLZd5wDXSdONOItireNkPA%3D%3D)
 
-https://sabrinagarcia82.atlassian.net/l/cp/11L16MjG
 
