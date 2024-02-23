@@ -44,17 +44,10 @@ Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solució
 
 #### 
 ###
-<img src="https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png" alt="Figma" width="20" height="20"> [Figma](https://www.figma.com/file/Qz1UFGwGJbLgpxo7pWBfjx/E-Bike-show?type=design&node-id=1-578&mode=design&t=RVDHoCMheTiAf0Ik-0)
+<img src="https://www.figma.com/file/Qz1UFGwGJbLgpxo7pWBfjx/E-Bike-show?type=design&node-id=1-578&mode=design&t=RVDHoCMheTiAf0Ik-0"> [Figma](https://www.figma.com/file/Qz1UFGwGJbLgpxo7pWBfjx/E-Bike-show?type=design&node-id=1-578&mode=design&t=RVDHoCMheTiAf0Ik-0)
 
 URL 
 
-<img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Trello-512.png" alt="Trello" width="20" height="20"> [Trello](https://trello.com/b/TM5clMob/equipo-e-commerce-repuestos-de-bicicletas-espec%C3%ADfica) 
-
-#### 
-###
-<img src="https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png" alt="Figma" width="20" height="20"> [Figma](https://www.figma.com/file/Qz1UFGwGJbLgpxo7pWBfjx/E-Bike-show?type=design&node-id=1-578&mode=design&t=RVDHoCMheTiAf0Ik-0)
-
-URL 
 
 
 # Tecnologías utilizadas
