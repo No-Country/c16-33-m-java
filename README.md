@@ -5,7 +5,7 @@
 ![https://github.com/No-Country/](https://i.ytimg.com/vi/IeGa5-PcfMU/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDMvP2k7FEOB5DlpvkdkQzm0u4ciQ)
 
 <h1 align="center"> E-Bike </h1>
-![im bici](https://github.com/No-Country/c16-33-m-java/assets/159567884/d11c1263-db5e-4389-bc43-f98bdf5f4765)
+(https://github.com/No-Country/c16-33-m-java/assets/159567884/d11c1263-db5e-4389-bc43-f98bdf5f4765)
 
 El equipo C16-33-m java ya tiene en marcha el proyecto E-bike! 
 El e-commerce ideal para ti, que necesitas tu bici o accesorios de manera ágil, práctica y segura. ¿Quieres una bici con dichas características?,¿necesitas el repuesto de siempre? nosotros también lo queremos: en E-bike la tienes! :white_check_mark:
