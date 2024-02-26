@@ -1,0 +1,76 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+  
+
+    --fuente:"Montserrat", sans-serif;
+   
+    --colorblanco: #FFFFFF;
+    --colorverde: #62ef3b;
+    --colorgris: #4C4B5E;
+    --colorgrislinea: #8c8b9b;
+    --colornegro: #0B1215;
+
+
+
+}
+
+
+.footer-container {
+    
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--colorgrislinea);
+    margin-bottom: 250px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand-name h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .important-elements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .important-elements li {
+    margin-right: 20px;
+  }
+  
+  .important-elements a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .social-media a {
+    color: #333;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+  }
+  
+  body{
+    background-color: var(--colorverde);
+  }
+
+  .imglogo{
+    height: 50px;
+    display:flex;
+    align-items: center;
+  }
