@@ -81,7 +81,7 @@ Si aún sigues con dudas, no dejes de contactarte con nuestro E-xcelente equipo:
 
 
 
-### QA Y TESTERS 🧪✅🏁
+### QA TESTERS 🧪✅🏁
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Zulay_Peraza-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/zulayperaza/)
 
 -   (Proyect Manager Jr.)
