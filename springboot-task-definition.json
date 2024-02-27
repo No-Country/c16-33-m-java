@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:825035379228:task-definition/springboot-task-definition:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:825035379228:task-definition/springboot-task-definition:3",
     "containerDefinitions": [
         {
             "name": "e-bike",
@@ -36,7 +36,7 @@
     "taskRoleArn": "arn:aws:iam::825035379228:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::825035379228:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -82,7 +82,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-02-23T07:46:15.548Z",
+    "registeredAt": "2024-02-27T05:02:03.517Z",
     "registeredBy": "arn:aws:iam::825035379228:user/gian",
     "tags": []
 }
