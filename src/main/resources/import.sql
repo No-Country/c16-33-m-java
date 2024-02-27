@@ -3,7 +3,7 @@ INSERT INTO categoria(id, nombre) VALUES(2, 'Asientos');
 INSERT INTO categoria(id, nombre) VALUES(3, 'Llantas');
 INSERT INTO categoria(id, nombre) VALUES(4, 'Frenos');
 INSERT INTO categoria(id, nombre) VALUES(5, 'Pedales');
-INSERT INTO categoria(id, nombre) VALUES(6, 'Prueba');
+
 
 
 INSERT INTO producto(id, nombre, precio, id_categoria) VALUES(1, 'Manubrio clásico', 80.3, 1);
