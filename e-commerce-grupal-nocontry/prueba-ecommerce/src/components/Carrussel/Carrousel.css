@@ -1,0 +1,118 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+  
+
+    --fuente:"Montserrat", sans-serif;
+   
+    --colorblanco: #FFFFFF;
+    --colorverde: #62ef3b;
+    --colorgris: #4C4B5E;
+    --colornegro: #0B1215;
+
+
+
+}
+
+
+body{
+    background-color: var(--colorblanco);
+}
+
+ul,
+li {
+    list-style: none;
+    white-space: nowrap;
+}
+
+li {
+    display: inline;
+}
+
+
+/* Main container */
+
+.carrouselContainer {
+    width: 1500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Slider container */
+.sliderContainer {
+    position: relative;
+    height: 100%
+}
+
+/* dots carrusel */
+.dotsContainer {
+    display: flex;
+    justify-content: center;
+    color: var(--colornegro);
+    
+}
+
+.dot-container-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 3px;
+    cursor: pointer;
+    font-size: 7px;
+    text-align: center;
+}
+
+/* Arrows */
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffffb8;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+   
+}
+.leftArrow:hover{
+    filter: invert(1);
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffffb8;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.rightArrow:hover{
+    filter: invert(1);
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid var(--colorgris); */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.active {
+    display: flex;
+    align-content: center;
+    color: var(--colorverde);
+    font-size: 10px;
+    justify-content: center;
+}
