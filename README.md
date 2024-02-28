@@ -42,7 +42,7 @@ Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solució
 # Funcionalidades
 
 - Búsqueda y filtrado avanzado de productos por categoría, 
-- Información detallada de cada producto, incluyendo especificaciones técnicas y precio.
+- Información detallada de cada producto, incluyendo especificaciones técnicas, disponibilidad y precio.
 - Proceso de compra seguro y eficiente .
 - Creación de cuentas de usuario para una experiencia de compra personalizada.
 
