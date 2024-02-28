@@ -1,6 +1,8 @@
 package com.application.ecommerce.persistence;
 
 import com.application.ecommerce.entities.Cart;
+import com.application.ecommerce.models.CartPK;
+import com.application.ecommerce.models.ProductWithCartDetails;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -12,17 +14,13 @@ public interface ICartDAO {
     List<Cart> findAll();
 
     //encontrar un carrito por su id
-    Optional<Cart> findById(Long id);
-
-    //encontrar un carrito por id orden
-    Optional<Cart> findCartByIdOrder(Long idOrder);
-
-    //encontrar carrito con un total venta especifico
-    Optional<Cart> findCartByTotal(BigDecimal total);
+    Optional<Cart> findById(CartPK id);
 
     //guardar un nuevo carrito
     Cart saveCart(Cart cart);
 
     //eliminar carrito
-    void deleteCartById(Long id);
+    void deleteCartById(CartPK id);
+
+    List<ProductWithCartDetails> getAllProducts(Long customerId);
 }

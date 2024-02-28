@@ -1,5 +1,6 @@
 package com.application.ecommerce.entities;
 
+import com.application.ecommerce.models.CartPK;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
@@ -18,27 +19,20 @@ import java.math.BigDecimal;
 @Table(name = "carrito")
 public class Cart {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @EmbeddedId
+    private CartPK cartPK;
+
+    @ManyToOne
+    @MapsId("customerId")
+    @JoinColumn(name = "id_cliente", referencedColumnName = "id")
+    private Customer customer;
+
+    @ManyToOne
+    @MapsId("productId")
+    @JoinColumn(name = "id_producto", referencedColumnName = "id")
+    private Product product;
 
     @Column(name = "cantidad")
     private int quantity;
-
-    @Column(name = "precio_unidad")
-    private BigDecimal unitPrice;
-
-    @Column(name = "total")
-    private BigDecimal total;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_producto", nullable = false)
-    @JsonIgnore
-    private Product product;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_orden", nullable = false)
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    private Order order;
 
 }
