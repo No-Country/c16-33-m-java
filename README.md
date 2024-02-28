@@ -34,9 +34,9 @@
 
 El equipo C16-33-m Java ya tiene en marcha el proyecto E-bike! 
 El E-commerce ideal para ti que necesitas tu bici o accesorios de manera ágil, práctica y segura. 
-🚴‍♀️¿Quieres una bici con dichas características?,¿necesitas el repuesto de siempre? nosotros también lo queremos: en E-bike la tienes! :white_check_mark:
+🚴‍♀️¿Quieres una bici con dichas características?,¿Necesitas el repuesto de siempre? nosotros también lo queremos: en E-bike la tienes! :white_check_mark:
 🙋‍♂️🙋‍♀️¿Quieres hacer crecer tu marca y que llegue aún más lejos? 
-E-bike está especializado para hacer crecer tu empresa y sus ingresos, reconoce a sus clientes favoreciendo el intercambio y crecimiento exponencial. :chart_with_upwards_trend:
+E-bike está especializado para hacer crecer tu empresa y sus ingresos, reconoce a tus clientes favoreciendo el intercambio y crecimiento exponencial. :chart_with_upwards_trend:
 Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solución a tus necesidades.
 
 # Funcionalidades
