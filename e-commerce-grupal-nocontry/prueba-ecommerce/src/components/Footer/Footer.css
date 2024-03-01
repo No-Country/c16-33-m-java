@@ -21,11 +21,12 @@
 
 .footer-container {
     
-    color: #333;
+    color: var(--colorblanco);
+    background-color: var(--colornegro);
     padding: 20px;
     text-align: center;
-    border: 1px solid var(--colorgrislinea);
-    margin-bottom: 250px;
+    border: 1px solid var(--colornegro);
+    
   }
   
   .footer-content {

@@ -27,7 +27,7 @@
   margin: 60px 0px 0px 0px;
   padding: 20px 20px 60px 20px;
   background-color: var(--colorblanco);
-  
+
 
 }
 
@@ -35,7 +35,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
- 
+
   border-radius: 10px;
 }
 
@@ -44,7 +44,7 @@
   border-radius: 10px;
   background-color: var(--colorblanco);
   padding: 10px;
-  margin:30px 10px 10px 10px;
+  margin: 30px 10px 10px 10px;
   width: 250px;
   height: 445px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -77,8 +77,15 @@
   margin-bottom: 10px;
 }
 
+.img-bike {
+  height: 190px;
+  width: 250px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
 .descri-precio {
-  margin: 315px 0px 0px 0px;
+  margin: 15px 0px 0px 0px;
 }
 
 button {
@@ -99,7 +106,7 @@ button:hover {
 }
 
 .destacados-btn {
-  
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -110,15 +117,16 @@ button:hover {
 
 .imgpreparate {
   height: 80px;
-  position:absolute;
+  position: absolute;
   top: 676px;
   left: 25px;
 
 }
 
-.agregar-btn{
+.agregar-btn {
   font-family: var(--fuente);
 }
+
 /* .destacado-item:hover,
 button:hover {
   

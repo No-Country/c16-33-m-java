@@ -1,80 +1,100 @@
 import React, { useState } from 'react';
 import './Header.css';
 
-const App = () => {
+const Header = ({carrito}) => {
   const [bicicletasDropdown, setBicicletasDropdown] = useState(false);
   const [accesoriosDropdown, setAccesoriosDropdown] = useState(false);
+  const [carritoDropdown, setCarritoDropdown] = useState(false);
+ 
 
   const toggleBicicletasDropdown = () => {
     setBicicletasDropdown(!bicicletasDropdown);
     setAccesoriosDropdown(false);
+    setCarritoDropdown(false);
   };
 
   const toggleAccesoriosDropdown = () => {
     setAccesoriosDropdown(!accesoriosDropdown);
     setBicicletasDropdown(false);
+    setCarritoDropdown(false);
   };
 
+  const toggleCarritoDropdown = () => {
+    setCarritoDropdown(!carritoDropdown);
+    setBicicletasDropdown(false);
+    setAccesoriosDropdown(false);
+  };
+
+  
+  
+
   return (
-    <body>
-      <section>
-        {/* HEADER */}
-        <header>
-          <section className="sec1">
-            <div className="logo">
-              <h1><img src="./src/img/Logo1.png" alt="E-bike" className='ebike' /></h1>
+    <header>
+      <section className="sec1">
+        <div className="logo">
+          <h1><img src="./src/img/Logo1.png" alt="E-bike" className='ebike' /></h1>
+        </div>
+        <div className="navigate">
+          <a href="#" className="margin" onClick={toggleBicicletasDropdown}>
+            Bicicletas <i className="bi bi-caret-down"></i>
+          </a>
+          {bicicletasDropdown && (
+            <div className="dropdown-content">
+              <a href="#">Bicicleta 1</a>
+              <a href="#">Bicicleta 2</a>
             </div>
-            <div className="navigate">
-              <a href="#" className="margin" onClick={toggleBicicletasDropdown}>
-                Bicicletas <i className="bi bi-caret-down"></i>
+          )}
+
+          <a href="#" className="margin" onClick={toggleAccesoriosDropdown}>
+            Accesorios <i className="bi bi-caret-down"></i>
+          </a>
+          {accesoriosDropdown && (
+            <div className="dropdown-content">
+              <a href="#">Accesorio 1</a>
+              <a href="#">Accesorio 2</a>
+            </div>
+          )}
+          <div className="margenbtn">
+            <form action="">
+              <input type="search" className="form1" name="" id="" />
+              <a href="#" className="lupa">
+                <i className="bi bi-search"></i>
               </a>
-              {bicicletasDropdown && (
-                <div className="dropdown-content">
-                  <a href="#">Bicicleta 1</a>
-                  <a href="#">Bicicleta 2</a>
+            </form>
+          </div>
+        </div>
+        {/* Login */}
+        <div className="divlog">
+          <a href="#" className='inises'>Iniciar Sesión </a>
+        </div>
+        <div className="icons1">
+          <a href="" className='iconstyle'>
+            <i className="bi bi-heart"></i>
+          </a>
+          <a href="" className='iconstyle'>
+            <i className="bi bi-person"></i>
+          </a>
+          <a href="#" className="margin" onClick={toggleCarritoDropdown}>
+            <i className="bi bi-cart"></i> Carrito
+          </a>
+          {carritoDropdown && (
+            <div className="dropdown-content1">
+              {/* Mostrar elementos del carrito */}
+              {carrito.map((item) => (
+                <div key={item.id}>
+                  <p>{item.nombre}</p>
+                  <p>Precio: ${item.precio}</p>
                 </div>
-              )}
-              <a href="#" className="margin" onClick={toggleAccesoriosDropdown}>
-                Accesorios <i className="bi bi-caret-down"></i>
-              </a>
-              {accesoriosDropdown && (
-                <div className="dropdown-content">
-                  <a href="#">Accesorio 1</a>
-                  <a href="#">Accesorio 2</a>
-                </div>
-              )}
-              <div className="margenbtn">
-                <form action="">
-                  <input type="search" className="form1" name="" id="" />
-                  <a href="#" className="lupa">
-                    <i className="bi bi-search"></i>
-                  </a>
-                </form>
-              </div>
+              ))}
             </div>
-            {/* Login */}
-            <div className="divlog">
-              <a href="" className='inises'>Iniciar Sesión </a>
-            </div>
-            <div className="icons1">
-              <a href="" className='iconstyle'>
-                <i className="bi bi-heart"></i>
-              </a>
-              <a href="" className='iconstyle'>
-                <i className="bi bi-person"></i>
-              </a>
-              <a href="" className='iconstyle'>
-                <i className="bi bi-cart3"></i>
-              </a>
-            </div>
-          </section>
-          <section className="sec2"></section>
-        </header>
-        {/* COMIENZO MAIN */}
+          )}
+        </div>
       </section>
-    </body>
+      <section className="sec2"></section>
+    </header>
   );
 };
 
-export default App;
+export default Header;
+
 
