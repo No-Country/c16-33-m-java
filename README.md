@@ -4,7 +4,9 @@
 # Equipo C16-33-m-java
 
 
-![https://github.com/No-Country/](https://i.ytimg.com/vi/IeGa5-PcfMU/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDMvP2k7FEOB5DlpvkdkQzm0u4ciQ)
+<p align="center">
+  <img src="https://i.ytimg.com/vi/IeGa5-PcfMU/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDMvP2k7FEOB5DlpvkdkQzm0u4ciQ" alt="Logo de No-Country">
+</p>
 
 <h1 align="center"> E-Bike </h1>
 
@@ -32,15 +34,15 @@
 
 El equipo C16-33-m Java ya tiene en marcha el proyecto E-bike! 
 El E-commerce ideal para ti que necesitas tu bici o accesorios de manera ágil, práctica y segura. 
-🚴‍♀️¿Quieres una bici con dichas características?,¿necesitas el repuesto de siempre? nosotros también lo queremos: en E-bike la tienes! :white_check_mark:
+🚴‍♀️¿Quieres una bici con dichas características?,¿Necesitas el repuesto de siempre? nosotros también lo queremos: en E-bike la tienes! :white_check_mark:
 🙋‍♂️🙋‍♀️¿Quieres hacer crecer tu marca y que llegue aún más lejos? 
-E-bike está especializado para hacer crecer tu empresa y sus ingresos, reconoce a sus clientes favoreciendo el intercambio y crecimiento exponencial. :chart_with_upwards_trend:
+E-bike está especializado para hacer crecer tu empresa y sus ingresos, reconoce a tus clientes favoreciendo el intercambio y crecimiento exponencial. :chart_with_upwards_trend:
 Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solución a tus necesidades.
 
 # Funcionalidades
 
 - Búsqueda y filtrado avanzado de productos por categoría, 
-- Información detallada de cada producto, incluyendo especificaciones técnicas , opiniones de usuarios y valor.
+- Información detallada de cada producto, incluyendo especificaciones técnicas y precio.
 - Proceso de compra seguro y eficiente .
 - Creación de cuentas de usuario para una experiencia de compra personalizada.
 
@@ -81,7 +83,7 @@ Si aún sigues con dudas, no dejes de contactarte con nuestro E-xcelente equipo:
 
 
 
-### QA Y TESTERS 🧪✅🏁
+### QA TESTERS 🧪✅🏁
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Zulay_Peraza-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/zulayperaza/)
 
 -   (Proyect Manager Jr.)
