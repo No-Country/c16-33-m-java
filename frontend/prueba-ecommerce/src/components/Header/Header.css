@@ -186,8 +186,16 @@ body {
     transition: background-color 0.3s ease-in-out;
 }
 
-/* Agrega un hover sutil a los enlaces de navegación en el header */
+
 .navigate a:hover {
     color: var(--colorverde);
     transition: color 0.3s ease-in-out;
+}
+
+
+.dropdown-content1 {
+    display:flex;
+    flex-direction: column;
+    border: 1px solid var(--colorgrislinea);
+
 }

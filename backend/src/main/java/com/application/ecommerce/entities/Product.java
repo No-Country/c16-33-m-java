@@ -31,7 +31,8 @@ public class Product {
     @JsonIgnore
     private Category category;
 
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.LAZY,orphanRemoval = true)
     @JsonIgnore
     private List<Cart> carts = new ArrayList<>();
 

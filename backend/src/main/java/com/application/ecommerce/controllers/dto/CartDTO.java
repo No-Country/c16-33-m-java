@@ -7,13 +7,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class CartDTO {
-    private Product product;
+
+    private Long productId;
     private int quantity;
     private BigDecimal unitPrice;
     private BigDecimal total;

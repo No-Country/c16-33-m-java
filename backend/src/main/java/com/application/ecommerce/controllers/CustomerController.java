@@ -5,7 +5,6 @@ import com.application.ecommerce.entities.Customer;
 import com.application.ecommerce.service.ICustomerService;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -81,24 +80,23 @@ public class CustomerController {
 
     }
 
-    // ACTUALIZA EL CLIENTE
+    // ELIMINA UN CLIENTE
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable Long id, @RequestBody CustomerDTO customerDTO) {
-        try {
-            return customerService.findById(id)
-                    .map(customer -> {
-                        customer.setName(customerDTO.getName());
-                        customer.setLastName(customerDTO.getLastName());
-                        customer.setCellPhone(customerDTO.getCellPhone());
-                        customer.setEmail(customerDTO.getEmail());
-                        customer.setBirthday(customerDTO.getBirthday());
-                        customerService.save(customer);
-                        return ResponseEntity.ok("Registro Actualizado");
-                    })
-                    .orElseGet(() -> ResponseEntity.notFound().build());
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error al actualizar el registro");
+        Optional<Customer> customerOptional = customerService.findById(id);
+
+        if (customerOptional.isPresent()) {
+            Customer customer = customerOptional.get();
+            customer.setName(customerDTO.getName());
+            customer.setLastName(customerDTO.getLastName());
+            customer.setCellPhone(customerDTO.getCellPhone());
+            customer.setEmail(customerDTO.getEmail());
+            customer.setBirthday(customerDTO.getBirthday());
+            customerService.save(customer);
+
+            return ResponseEntity.ok("Registro Actualizado");
         }
+        return ResponseEntity.notFound().build();
     }
 
     @DeleteMapping("/delete/{id}")

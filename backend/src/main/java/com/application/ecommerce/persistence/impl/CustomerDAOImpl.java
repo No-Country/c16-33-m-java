@@ -37,6 +37,4 @@ public class CustomerDAOImpl implements ICustomerDAO {
         customerRepository.deleteById(id);
     }
 
-
-
 }
