@@ -4,10 +4,10 @@
 
 
 :root {
-  
 
-    --fuente:"Montserrat", sans-serif;
-   
+
+    --fuente: "Montserrat", sans-serif;
+
     --colorblanco: #FFFFFF;
     --colorverde: #62ef3b;
     --colorgris: #4C4B5E;
@@ -20,79 +20,106 @@
     padding: 0px;
     margin: 0px;
 }
+
 .box-space {
-  margin: 80px 0px 0px 0px;
+    margin: 80px 0px 0px 0px;
 }
+
 .org-div1 {
-  display:flex;
-  justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .org-div1 div h2 {
-  font-size: 75px;
-  font-weight: 900;
-  text-shadow: 2px 2px 5px var(--colorgrislinea);
-  display: flex;
-  align-items: center;
-  margin: 85px 0px 45px 0px;
+    font-size: 75px;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px var(--colorgrislinea);
+    display: flex;
+    align-items: center;
+    margin: 85px 0px 45px 0px;
 }
 
 .btn-ver {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--colornegro);
-  border: 1px solid var(--colornegro);
-  border-radius: 10px;
-  padding: 10px 40px 10px 40px;
-  text-decoration: none;
-  margin: 15px 0px 0px 0px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--colornegro);
+    border: 1px solid var(--colornegro);
+    border-radius: 10px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    margin: 15px 0px 0px 0px;
 
 }
 
-.imgbike1{
-  width: 600px;
+.imgbike1 {
+    width: 600px;
 }
 
 .background-img {
-    background-image: url('./src/img/fondo1.png');
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
-    background-position: center; /* Centra la imagen en el contenedor */
-    width: 1280px;
+    background-image: url('./src/img/fondoebike.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+    background-position: 0 100%;
+    /* Centra la imagen en el contenedor */
+    width: 100%;
     height: 600px;
     flex-direction: row;
-  }
+}
 
-  .org-container {
-    display:flex;
+.org-container {
+    display: flex;
     justify-content: space-around;
-  }
+}
 
 .brand {
-  margin: 100px 0px 0px 0px;
+    width: 50%;
+    margin: 100px 0px 0px 0px;
 
+}
+
+.logo{
+    padding-left: 100px;
+  
+}
+.org-cat {
+    width: 50%;
 }
 
 .title2 {
-  font-size: 45px;
-  margin: 100px 0px 100px 0px;
+    font-size: 45px;
+    margin: 100px 0px 100px 0px;
+    padding: 5px 5px 5px 20px;
+    font-family: var(--fuente);
+    color: #FFFFFF;
+    background-color: var(--colornegro);
+    box-shadow: 10px 10px  var(--colorverde);
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+
 }
 
 .btn-catalogo {
-  font-weight: 600;
-  color: var(--colornegro);
-  border: 1px solid var(--colornegro);
-  border-radius: 10px;
-  padding: 10px 25px 10px 25px;
-  text-decoration: none;
-  
-  margin: 0px 0px 0px 0px;
+    font-weight: 800;
+    color: var(--colorblanco);
+    background-color: var(--colornegro);
+    border-radius: 10px;
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    font-family: var(--fuente);
+    box-shadow: 5px 5px var(--colorverde);
+    margin: 0px 0px 0px 0px;
+    transition: all .1s ease-in-out;
 }
 
 .btn-catalogo:hover {
-  background-color: var(--colornegro);
-  color: var(--colorverde);
+    background-color: var(--colorverde);
+    color: var(--colornegro);
+    box-shadow: 5px 5px var(--colornegro);
+    
 }
+
 .btn-ver:hover {
-  background-color: var(--colornegro);
-  color: var(--colorverde);
+    background-color: var(--colornegro);
+    color: var(--colorverde);
 }

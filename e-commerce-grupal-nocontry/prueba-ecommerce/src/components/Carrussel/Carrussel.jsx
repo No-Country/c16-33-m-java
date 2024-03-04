@@ -5,8 +5,7 @@ import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from "react-icons
 import './Carrousel.css';
 
 // Importar imágenes directamente desde data
-import Crsl_001 from './assets/Crsl_001.jpg';
-import Crsl_002 from './assets/Crsl_002.jpg';
+
 import Crsl_003 from './assets/Crsl_003.jpg';
 import Crsl_004 from './assets/Crsl_004.jpg';
 import Crsl_005 from './assets/Crsl_005.jpg';

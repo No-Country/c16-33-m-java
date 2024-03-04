@@ -4,74 +4,96 @@
 
 
 :root {
-  
 
-    --fuente:"Montserrat", sans-serif;
-   
+    --fuente: "Montserrat", sans-serif;
     --colorblanco: #FFFFFF;
     --colorverde: #62ef3b;
     --colorgris: #4C4B5E;
     --colorgrislinea: #8c8b9b;
     --colornegro: #0B1215;
 
-
-
 }
 
 
 .footer-container {
-    
+
     color: var(--colorblanco);
     background-color: var(--colornegro);
     padding: 20px;
     text-align: center;
     border: 1px solid var(--colornegro);
-    
-  }
-  
-  .footer-content {
+
+}
+
+.footer-content {
     display: flex;
-    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    min-width: 475px;
     align-items: center;
-  }
-  
-  .brand-name h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .important-elements ul {
+    border-bottom: solid 1px var(--colorgris);
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.brand-name {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 20px 20px 20px;
+}
+
+.important-elements {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family: var(--fuente);
+}
+
+.important-elements ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-  }
-  
-  .important-elements li {
-    margin-right: 20px;
-  }
-  
-  .important-elements a {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.li-head {
     text-decoration: none;
-    color: #333;
-  }
-  
-  .social-media a {
-    color: #333;
+    color: var(--colorgrislinea);
+}
+
+.important-elements li {
+    margin-right: 20px;
+
+}
+
+.li-a {
+    display: flex;
+
+    text-decoration: none;
+    color: var(--colorblanco);
+}
+
+.social-media a {
+
+
+    color: var(--colorblanco);
+    margin-top: 20px;
     margin-right: 10px;
     font-size: 18px;
-  }
-  
-  .copyright {
-    margin-top: 20px;
-  }
-  
-  body{
-    background-color: var(--colorverde);
-  }
+}
 
-  .imglogo{
-    height: 50px;
-    display:flex;
-    align-items: center;
-  }
+.copyright {
+    margin-top: 20px;
+}
+
+body {
+    background-color: var(--colorverde);
+}
+
+.imglogo {
+    height: 20px;
+    display: flex;
+
+}

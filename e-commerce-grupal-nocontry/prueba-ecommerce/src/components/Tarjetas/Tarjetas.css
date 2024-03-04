@@ -1,4 +1,3 @@
-/* TarjetaEcommerce.css */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -98,7 +97,7 @@
 }
 
 .tipoyprecio {
-  margin: 310px 0px 0px 0px;
+  margin: 280px 0px 0px 0px;
   display:flex;
   justify-content: center;
   flex-direction: column;
@@ -109,7 +108,6 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  
  
   
 }
@@ -117,4 +115,3 @@
 .tarjeta-ecommerce h3 {
   margin: 10px 0px 10px 10px;
 }
-

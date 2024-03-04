@@ -1,0 +1,92 @@
+/* Import Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Root Variables */
+:root {
+    --fuente: "Montserrat", sans-serif;
+    --colorblanco: #FFFFFF;
+    --colorverde: #62ef3b;
+    --colorgris: #4C4B5E;
+    --colorgrislinea: #8c8b9b;
+    --colornegro: #0B1215;
+}
+
+/* Body Styling */
+body {
+    font-family: var(--fuente);
+    margin: 0;
+    padding: 0;
+    background-color: var(--colorblanco);
+    color: var(--colornegro);
+}
+
+/* Header Styling */
+header {
+    background-color: var(--colorgris);
+    color: var(--colorblanco);
+    padding: 10px;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: var(--colorblanco);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Checkout Section Styling */
+section {
+    padding: 20px;
+}
+
+section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: var(--colorgris);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: var(--colorgrislinea);
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--colorgrislinea);
+    border-radius: 5px;
+}
+
+/* Payment Section Styling */
+section p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--colorgris);
+    color: var(--colorblanco);
+    padding: 10px;
+    text-align: center;
+}
