@@ -1,4 +1,3 @@
-// TarjetaEcommerce.jsx
 import React from 'react';
 
 

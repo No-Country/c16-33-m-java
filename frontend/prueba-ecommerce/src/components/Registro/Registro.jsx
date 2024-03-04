@@ -1,7 +1,8 @@
+//REGISTRO
 import React, { useState } from 'react';
-import './Login.css';
+import './Registro.css';
 
-const Login = () => {
+const Registro = () => {
   const [bicicletasDropdown, setBicicletasDropdown] = useState(false);
   const toggleBicicletasDropdown = () => {
     setBicicletasDropdown(!bicicletasDropdown);
@@ -16,7 +17,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // Lógica para autenticar al usuario
+   
     console.log('Usuario:', username);
     console.log('Contraseña:', password);
   };
@@ -85,7 +86,7 @@ const Login = () => {
         <div className='ordencaja1'>
           {/* caja imagen */}
           <div className='divciclista'>
-            <img src="./src/img/imgregistro.png" className="ciclista" alt="" />
+            <img src="./src/img/ciclista.png" className="ciclista" alt="" />
           </div>
           {/* caja login */}
           <div>
@@ -124,4 +125,4 @@ const Login = () => {
       );
 };
 
-export default Login;
+export default Registro;
