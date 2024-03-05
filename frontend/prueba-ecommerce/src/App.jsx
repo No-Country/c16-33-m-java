@@ -9,6 +9,7 @@ import Registro from './components/Registro/Registro.jsx';
 import Portada from './components/Portada/Portada.jsx';
 import Login from './components/Login/Login.jsx';
 import InfoMarca from './components/Infomarca/Infomarca.jsx';
+import Carrito from './components/Carrito/Carrito.jsx';
 const App = () => {
   const [carrito, setCarrito] = useState([]);
 
@@ -26,6 +27,7 @@ const App = () => {
       <Destacados onAgregarAlCarrito={agregarAlCarrito} />
       <Tarjetas />
       <InfoMarca />
+      <Carrito />
 
 
 

@@ -22,7 +22,6 @@
 }
 
 .InfoMarca-container {
-    background-color: var(--colornegro);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -96,7 +95,7 @@
     font-weight:300;
     font-family: var(--fuente);
     color: var(--colorblanco);
-    padding: 20px;
+    padding: 30px 480px 30px 480px;
 }
 
 .green-text{

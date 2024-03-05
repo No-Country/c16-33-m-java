@@ -1,4 +1,4 @@
-import React, { useState, useEffect  } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Tarjetas.css';
 import TarjetaEcommerce from './Datosdetarjetas.jsx';
 
@@ -40,7 +40,6 @@ const Tarjetas = () => {
             })
             .then(data => {
                 console.log('Producto agregado al carrito:', data);
-                
             })
             .catch(error => console.error('Error adding product to cart:', error));
     };
@@ -65,7 +64,7 @@ const Tarjetas = () => {
             </div>
 
             <div className="contenedor-ecommerce">
-                {productos.map(producto => (
+                {productos.slice(0, 5).map(producto => (
                     <TarjetaEcommerce
                         key={producto.id}
                         nombre={producto.name}
@@ -76,13 +75,8 @@ const Tarjetas = () => {
                     />
                 ))}
             </div>
-
-
         </div>
     );
 };
-
-
-
 
 export default Tarjetas;

@@ -97,3 +97,9 @@ body {
     display: flex;
 
 }
+
+.slogan {
+    background-color: var(--colornegro);
+    padding: 25px 375px 25px 375px;
+    border-radius: 10px;
+}

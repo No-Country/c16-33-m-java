@@ -31,7 +31,7 @@ function Destacados() {
         <h2>Prepárate para la temporada</h2>
       </div>
       <div className="destacados-list">
-        {products.map((product) => (
+        {products.slice(0, 5).map((product) => (
           <div key={product.id} className="destacado-item">
             <div className='destacadosorder'>
               <h3>{product.name}</h3>
@@ -39,14 +39,12 @@ function Destacados() {
                 <i className="bi bi-bookmark-plus"></i>
               </a>
             </div>
-            {/* <div><img src="./src/img/bike1.png" className='img-bike' alt="" /></div> */}
             <div className="descri-precio">
-              {/* <p>{product.descripcion}</p> */}
               <p>Precio: ${product.price}</p>
               <div className='destacados-btn'>
-                {/* <button onClick={() => onAgregarAlCarrito(product)} className="agregar-btn">
+                <button onClick={() => onAgregarAlCarrito(product)} className="agregar-btn">
                   Agregar al Carrito
-                </button> */}
+                </button>
               </div>
             </div>
           </div>
@@ -56,4 +54,5 @@ function Destacados() {
   );
 }
 
-export default Destacados;
+export default Destacados;
+
