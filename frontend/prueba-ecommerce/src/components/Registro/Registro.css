@@ -229,6 +229,7 @@ input {
 .logoybtn {
     display:flex;
     justify-content: space-between;
+    margin: 35px 0px 0px 0px;
 }
 
 .style-input {  
@@ -299,4 +300,8 @@ input {
 .style-input:hover {
     border-color: var(--colorverde);
     transition: border-color 0.3s ease-in-out;
+}
+
+.imglogo {
+    height: 40px;
 }

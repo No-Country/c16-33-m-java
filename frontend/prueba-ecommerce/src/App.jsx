@@ -10,6 +10,7 @@ import Portada from './components/Portada/Portada.jsx';
 import Login from './components/Login/Login.jsx';
 import InfoMarca from './components/Infomarca/Infomarca.jsx';
 import Carrito from './components/Carrito/Carrito.jsx';
+import Catalogo from './components/Catalogo/Catalogo.jsx';
 const App = () => {
   const [carrito, setCarrito] = useState([]);
 
@@ -28,10 +29,10 @@ const App = () => {
       <Tarjetas />
       <InfoMarca />
       <Carrito />
-
-
-
+      <Registro />
       <Footer />
+      {/* <Catalogo /> */}
+
     </div>
 
   );
