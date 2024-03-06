@@ -29,7 +29,7 @@ const App = () => {
       <Tarjetas />
       <InfoMarca />
       <Carrito />
-      <Registro />
+      {/* <Registro /> */}
       <Footer />
       {/* <Catalogo /> */}
 
