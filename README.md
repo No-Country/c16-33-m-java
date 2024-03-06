@@ -128,6 +128,6 @@ A[Usuario]
     A --> C[Búsqueda y Filtrado];
     C --> D[Detalles del Producto];
     D --> E[Agregar al Carrito];
-    E --> F[Proceso de Pago];
+ E--	   
+    Registro--> F[Proceso de Pago];
     F --> G[Confirmación de Pedido];
-    
