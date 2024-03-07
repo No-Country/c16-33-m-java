@@ -85,9 +85,11 @@
 }
 
 .descri-precio {
-  margin: 15px 0px 0px 0px;
+  margin: 300px 0px 0px 0px;
 }
-
+.descr-precio1 {
+  margin: 322px 0px 0px 0px;
+}
 button {
   background-color: var(--colornegro);
   color: #fff;
@@ -127,8 +129,3 @@ button:hover {
   font-family: var(--fuente);
 }
 
-/* .destacado-item:hover,
-button:hover {
-  
-  /* color:  */
-/* } */

@@ -43,10 +43,10 @@ body {
     position: sticky;
 }
 
-.divlog {
+.divlogi {
     display: flex;
-    justify-content: space-around;
-    width: 140px;
+    justify-content: space-between;
+    width: 245px;
     align-items: center;
 
 }
@@ -156,11 +156,14 @@ body {
 
 }
 
-.inises {
+.inisesi {
+
     font-weight: 500;
     font-size:18px;
     text-decoration: none;
     color: var(--colornegro);
+    display:flex;
+    border-left: var(--colorgris);
 }
 
 

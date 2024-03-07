@@ -27,9 +27,6 @@ function Destacados() {
 
   return (
     <div className="destacados-container">
-      <div className='preparate'>
-        <h2>Prepárate para la temporada</h2>
-      </div>
       <div className="destacados-list">
         {products.slice(0, 5).map((product) => (
           <div key={product.id} className="destacado-item">
@@ -39,6 +36,7 @@ function Destacados() {
                 <i className="bi bi-bookmark-plus"></i>
               </a>
             </div>
+            
             <div className="descri-precio">
               <p>Precio: ${product.price}</p>
               <div className='destacados-btn'>

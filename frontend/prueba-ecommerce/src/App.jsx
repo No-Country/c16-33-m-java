@@ -1,6 +1,7 @@
 // App.jsx
 import React, { useState } from 'react';
 
+import SearchBar from './components/SearchBar/SearchBar.jsx';
 import Tarjetas from './components/Tarjetas/Tarjetas.jsx';
 import Header from './components/Header/Header.jsx';
 import Destacados from './components/Destacados/Destacados.jsx';
@@ -21,17 +22,15 @@ const App = () => {
   return (
 
     <div>
-      <Header carrito={carrito} />
-
-
+      {/* <SearchBar /> */}
+      <Header  />
       <Portada />
-      <Destacados onAgregarAlCarrito={agregarAlCarrito} />
+      <Destacados  />
       <Tarjetas />
-      <InfoMarca />
-      <Carrito />
-      {/* <Registro /> */}
+      <InfoMarca />  
+      
       <Footer />
-      {/* <Catalogo /> */}
+       {/* <Catalogo /> */}
 
     </div>
 

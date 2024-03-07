@@ -1,97 +1,86 @@
 import React, { useState } from 'react';
 import './Header.css';
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+import { Registro, Login, Catalogo, SearchBar, Infomarca, Carrito } from './index';
 
-const Header = ({carrito}) => {
-  const [bicicletasDropdown, setBicicletasDropdown] = useState(false);
-  const [accesoriosDropdown, setAccesoriosDropdown] = useState(false);
-  const [carritoDropdown, setCarritoDropdown] = useState(false);
- 
 
-  const toggleBicicletasDropdown = () => {
-    setBicicletasDropdown(!bicicletasDropdown);
-    setAccesoriosDropdown(false);
-    setCarritoDropdown(false);
+const Header = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearchInputChange = (event) => {
+    setSearchQuery(event.target.value);
   };
 
-  const toggleAccesoriosDropdown = () => {
-    setAccesoriosDropdown(!accesoriosDropdown);
-    setBicicletasDropdown(false);
-    setCarritoDropdown(false);
-  };
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
 
-  const toggleCarritoDropdown = () => {
-    setCarritoDropdown(!carritoDropdown);
-    setBicicletasDropdown(false);
-    setAccesoriosDropdown(false);
-  };
 
-  
-  
+    console.log(`Realizar búsqueda con el término: ${searchQuery}`);
+  };
 
   return (
-    <header>
-      <section className="sec1">
-        <div className="logo">
-          <h1><img src="./src/img/Logo1.png" alt="E-bike" className='ebike' /></h1>
-        </div>
-        <div className="navigate">
-          <a href="#" className="margin" onClick={toggleBicicletasDropdown}>
-            Bicicletas <i className="bi bi-caret-down"></i>
-          </a>
-          {bicicletasDropdown && (
-            <div className="dropdown-content">
-              <a href="#">Bicicleta 1</a>
-              <a href="#">Bicicleta 2</a>
-            </div>
-          )}
+    <BrowserRouter>
 
-          <a href="#" className="margin" onClick={toggleAccesoriosDropdown}>
-            Accesorios <i className="bi bi-caret-down"></i>
-          </a>
-          {accesoriosDropdown && (
-            <div className="dropdown-content">
-              <a href="#">Accesorio 1</a>
-              <a href="#">Accesorio 2</a>
-            </div>
-          )}
-          <div className="margenbtn">
-            <form action="">
-              <input type="search" className="form1" name="" id="" />
-              <a href="#" className="lupa">
-                <i className="bi bi-search"></i>
-              </a>
-            </form>
+
+      <header>
+        {/* LOGO */}
+
+        <section className="sec1">
+          <div className="logo">
+            <h1><img src="./src/img/Logo1.png" alt="E-bike" className='ebike' /></h1>
           </div>
-        </div>
-        {/* Login */}
-        <div className="divlog">
-          <a href="#" className='inises'>Iniciar Sesión </a>
-        </div>
-        <div className="icons1">
-          <a href="" className='iconstyle'>
-            <i className="bi bi-heart"></i>
-          </a>
-          <a href="" className='iconstyle'>
-            <i className="bi bi-person"></i>
-          </a>
-          <a href="#" className="margin" onClick={toggleCarritoDropdown}>
-            <i className="bi bi-cart"></i> Carrito
-          </a>
-          {carritoDropdown && (
-            <div className="dropdown-content1">
-              {/* Mostrar elementos del carrito */}
-              {carrito.map((item) => (
-                <div key={item.id}>
-                  <p>{item.nombre}</p>
-                  <p>Precio: ${item.precio}</p>
-                </div>
-              ))}
+          {/* NAV */}
+          <div className="navigate">
+            <NavLink to="catalogo" className="margin">
+              Bicicletas 
+            </NavLink>
+            <NavLink to="catalogo" className="margin">
+              Accesorios 
+            </NavLink>
+            
+            {/* SEARCHBAR */}
+            <div className="margenbtn">
+              <form onSubmit={handleSearchSubmit}>
+                <input
+                  type="search"
+                  className="form1"
+                  placeholder="Buscar..."
+                  value={searchQuery}
+                  onChange={handleSearchInputChange}
+                />
+                <NavLink className="lupa">
+                  <i className="bi bi-search"></i>
+                </NavLink>
+              </form>
             </div>
-          )}
-        </div>
-      </section>
-      <section className="sec2"></section>
-    </header>
+          </div>
+
+          {/* Login */}
+          <div className="divlogi">
+            <NavLink to="login" className='inisesi'>Iniciar Sesión</NavLink>
+            <NavLink to="registro" className='inisesi'>Regístrate</NavLink>
+          </div>
+          {/* FAVORITOS - USER - CART */}
+          <div className="icons1">
+            <NavLink className='iconstyle'>
+              
+            </NavLink>
+            
+            <NavLink to="carrito" className="margin">
+              <i className="bi bi-cart"></i> Carrito
+            </NavLink>
+          </div>
+        </section>
+        <section className="sec2"></section>
+      </header>
+
+      <Routes>
+        <Route path="login" element={<Login />} />
+        <Route path="registro" element={<Registro />}/>
+        <Route path="catalogo" element={<Catalogo />}/>
+        <Route path="carrito" element={<Carrito/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 };
 

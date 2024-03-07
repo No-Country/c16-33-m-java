@@ -26,166 +26,6 @@ body {
 }
 
 
-.sec1 {
-    color: var(--colorgris);
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 20px 0px 5px 0px;
-    border-bottom: 1px solid var(--colornegro);
-    background-color: var(--colorblanco);
-    padding: 0px 0px 10px 0px;
-    position: sticky;
-}
-
-.divlog {
-    display: flex;
-    justify-content: space-around;
-    width: 140px;
-    align-items: center;
-
-}
-
-.logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-}
-
-.ebike {
-    width: 180px;
-    height: 60px;
-    display:flex;
-    
-}
-.sec2 {
-    display: flex;
-    justify-content: center;
-}
-
-.margin {
-    color: var(--colornegro);
-    font-size: 18px;
-    font-weight: 500;
-    margin: 5px 30px 5px 30px;
-    text-decoration: none;
-    align-items: center;
-}
-
-.svg {
-    color: var(--colornegro);
-
-}
-
-.secmain3 {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px 200px 50px 150px;
-
-}
-
-.elementos {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-
-}
-
-.partes {
-    display: flex;
-    flex-direction: column;
-}
-
-.borde {
-    display: flex;
-    justify-content: center;
-    border: 1px solid var(--colorgris);
-
-}
-
-.navigate { 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* margin: 0px 15px 0px 25px; */
-}
-
-.margenbtn {
-    margin: 0px 30px 0px 45px;
-}
-
-.form1 {
-    border: 2px solid var(--colorgris);
-    background-color: var(--colorblanco);
-    border-radius: 50px;
-    width: 330px;
-    height: 40px;
-
-}
-
-.icons1 {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-
-}
-
-.iconstyle {
-    margin: 0px 10px 0px 10px;
-    text-decoration: none;
-    color: var(--colorgris);
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.lupa {
-    margin: 20px 20px 20px 25px;
-    text-decoration: none;
-    color: var(--colorgris);
-    font-weight: bold;
-    font-size: 20px;
-    position: sticky;
-    top: 19px;
-    left: 985px;
-
-}
-
-.inises {
-    font-weight: 500;
-    font-size:18px;
-    text-decoration: none;
-    color: var(--colornegro);
-}
-
-
-.sec1 a:hover,
-.margin:hover,
-.lupa:hover,
-.inises:hover,
-.iconstyle:hover {
-    color: var(--colorverde);
-    transition: color 0.3s ease-in-out;
-}
-
-
-.form1:hover {
-    border-color: var(--colorverde);
-    transition: border-color 0.3s ease-in-out;
-}
-
-
-.sec2:hover,
-.secmain3:hover {
-    background-color: var(--colorverde);
-    transition: background-color 0.3s ease-in-out;
-}
-
-
-.navigate a:hover {
-    color: var(--colorverde);
-    transition: color 0.3s ease-in-out;
-}
 
 /* Login */
 
@@ -582,14 +422,17 @@ input {
 }
 
 
-
+.tamaño {
+    height: 45px;
+    margin-top: 5px;
+}
 .ordencaja1 {
     display:flex;
     justify-content: center; 
    
 }
 
-.logoybtn {
+.logoybtn1 {
     display:flex;
     justify-content: space-between;
 }
