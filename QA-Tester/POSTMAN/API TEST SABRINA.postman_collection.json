@@ -1,0 +1,1048 @@
+{
+	"info": {
+		"_postman_id": "9c0f400a-c51b-499c-b4c0-98e75fc68d51",
+		"name": "API TEST SABRINA",
+		"description": "Coleccion de APIs de E-Bike para testear basados en la documentacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31830048"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Category Find by ID valido",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/category/find/3",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"find",
+								"3"
+							]
+						},
+						"description": "Se prueban ID Validos (que tienen categorias relacionadas como \"manubrios\", \"asientos\""
+					},
+					"response": []
+				},
+				{
+					"name": "Category Find by ID  NO valido",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/category/find/3546541561561561165151561",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"find",
+								"3546541561561561165151561"
+							]
+						},
+						"description": "Se prueban ID no Validos. (no dan resultado )"
+					},
+					"response": []
+				},
+				{
+					"name": "CategoryfindAll",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/category/findAll",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"findAll"
+							]
+						},
+						"description": "Trae todos las categorias"
+					},
+					"response": []
+				},
+				{
+					"name": "Category save (crea una nueva)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Prueba Sabrina\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/category/save",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"save"
+							]
+						},
+						"description": "Crea una categoria a traves de un valor de ID"
+					},
+					"response": []
+				},
+				{
+					"name": "update por ID valido",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Prueba 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/category/update/1",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"update",
+								"1"
+							]
+						},
+						"description": "Modificar una categoria valida"
+					},
+					"response": []
+				},
+				{
+					"name": "update por ID NO valido",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Prueba 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/category/update/135",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"update",
+								"135"
+							]
+						},
+						"description": "Modificar una categoria no valida"
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar ID Validos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/category/delete/5",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"delete",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar ID No validos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/category/delete/525",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"delete",
+								"525"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Se refiere a las categorias de productos : \"manubrio\", \"bicicletas\""
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Product Find by IDvalido",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/product/find/1",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"find",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Find by ID No Valido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/product/find/#1$",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"find",
+								""
+							],
+							"hash": "1$"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product find All",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/product/findAll",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Save (crea uno nuevo)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Llantas - Postman23\",\r\n    \"price\":300.0,\r\n    \"category\":{\r\n        \"id\":4\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/product/save",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update ID Valido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Llantas - Postman update\",\r\n    \"price\":300.0,\r\n    \"category\":{\r\n        \"id\":3\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/product/update/6",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"update",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update ID NO Valido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Llantas - Postman update\",\r\n    \"price\":300.0,\r\n    \"category\":{\r\n        \"id\":3\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/product/update/24684",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"update",
+								"24684"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar ID Validos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/product/delete/6",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar ID NO Validos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/product/delete/215456456465",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"delete",
+								"215456456465"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order (aun no esta subido-solo entorno local)",
+			"item": [
+				{
+					"name": "get ID Valido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/order/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"order",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get ID Valido No Valido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/order/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"order",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar ID valido",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/order/delete/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"order",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar ID no Valido",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/order/delete/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"order",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente (no esta subido)",
+			"item": [
+				{
+					"name": "Buscar por ID Valido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/customer/find/1",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"find",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar por ID No Valido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/customer/find/15465454654564",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"find",
+								"15465454654564"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/customer/findAll",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save (crear uno nuevo)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"5\",\r\n    \"name\": \"Maria\",\r\n    \"lastName\": \"Pena\",\r\n    \"cellPhone\": \"3234650987\",\r\n    \"email\": \"maria999@gmail.com\",\r\n    \"birthday\": \"1990-06-04\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/customer/save",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update ID valido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"Isabel\",\r\n    \"lastName\": \"Mina Guetio\",\r\n    \"cellPhone\": \"3234650987\",\r\n    \"email\": \"maria999@gmail.com\",\r\n    \"birthday\": \"1990-06-04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/customer/update/6",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"update",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update ID No valido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"Isabel\",\r\n    \"lastName\": \"Mina Guetio\",\r\n    \"cellPhone\": \"3234650987\",\r\n    \"email\": \"maria999@gmail.com\",\r\n    \"birthday\": \"1990-06-04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/customer/update/6",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"update",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User (no esta creado)",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carrito (no esta subido)",
+			"item": [
+				{
+					"name": "ID valido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/cart/1",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"cart",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ID No Valido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/cart/1",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"cart",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar elementos del carrito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\": 2,\r\n    \"unitPrice\": 10.99,\r\n    \"total\": 21.98,\r\n    \"product\": {\r\n        \"id\": 1,\r\n        \"name\": \"Producto de prueba\",\r\n        \"price\": 10.99,\r\n        \"category\": {\r\n            \"id\": 1,\r\n            \"name\": \"Categoría de prueba\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/api/cart/?customerId=1",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"cart",
+								""
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar elementos del carrito",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/cart/delete/2",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"cart",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pruebas",
+			"item": [
+				{
+					"name": "register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"admin\",\r\n    \"email\":\"admin@ebike.com\",\r\n    \"password\":\"admin\",\r\n    \"roles\":[\"admin\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/auth/register",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"admin\",\r\n    \"email\":\"admin@ebike.com\",\r\n    \"password\":\"admin\",\r\n    \"roles\":[\"admin\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/auth/register",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"usuario1\",\r\n    \"password\":\"usuario1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/auth/login",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Security (solo local)",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/auth/login",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/api/v1/demo",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"demo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
