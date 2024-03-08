@@ -17,20 +17,17 @@ const Portada = () => {
                 </div>
             </div>
 
-            {/* <div className="background-img">
+            <div className="background-img">
                 <div className='org-container'>
                     <div className='brand'>
-                        <h2>E-bike</h2>
+                        <img className='logo' src="./src/img/logoebike.png" width={200} alt="" />
                     </div>
-                    <div>
+                    <div className='org-cat'>
                         <h2 className='title2'>Encuentra tu estilo</h2>
                         <a href="" className='btn-catalogo'>Ver el catálogo</a>
                     </div>
                 </div>
-            </div> */}
-
-
-
+            </div>
         </div>
     );
 };

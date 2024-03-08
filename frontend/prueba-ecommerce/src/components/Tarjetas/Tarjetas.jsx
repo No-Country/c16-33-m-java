@@ -7,21 +7,42 @@ const Tarjetas = () => {
     const [productos, setProductos] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8080/api/product/findAll', {
-        method: 'GET'
+        fetch('http://test-1-env.eba-fpifxch7.us-east-1.elasticbeanstalk.com/api/product/findAll', {
+            method: 'GET'
         })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => setProductos(data))
-        .catch(error => console.error('Error fetching data:', error));
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => setProductos(data))
+            .catch(error => console.error('Error fetching data:', error));
     }, []);
 
-    const agregarAlCarrito = (nombre) => {
-        setCarrito([...carrito, nombre]);
+    const agregarAlCarrito = (productId) => {
+        // Add product to cart on the backend
+        fetch('http://test-1-env.eba-fpifxch7.us-east-1.elasticbeanstalk.com/api/product/findAll', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                productId: productId,
+                quantity: 1,
+            }),
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Producto agregado al carrito:', data);
+                
+            })
+            .catch(error => console.error('Error adding product to cart:', error));
     };
 
     const quitarDelCarrito = (nombre) => {
@@ -31,7 +52,7 @@ const Tarjetas = () => {
 
     return (
         <div className="org">
-             <div className="carrito">
+            <div className="carrito">
                 <h2 className="exclusivo">E-xclusivos</h2>
                 <ul>
                     {carrito.map((item, index) => (
@@ -45,15 +66,15 @@ const Tarjetas = () => {
 
             <div className="contenedor-ecommerce">
                 {productos.map(producto => (
-                        <TarjetaEcommerce
-                            key={producto.id}
-                            nombre={producto.name}
-                            tipo={producto.category.name}
-                            precio={producto.price}
-                            onAgregarAlCarrito={() => agregarAlCarrito(producto.id)}
-                            onQuitarDelCarrito={() => quitarDelCarrito(producto.id)}
-                        />
-                    ))}
+                    <TarjetaEcommerce
+                        key={producto.id}
+                        nombre={producto.name}
+                        tipo={producto.category.name}
+                        precio={producto.price}
+                        onAgregarAlCarrito={() => agregarAlCarrito(producto.id)}
+                        onQuitarDelCarrito={() => quitarDelCarrito(producto.id)}
+                    />
+                ))}
             </div>
 
 

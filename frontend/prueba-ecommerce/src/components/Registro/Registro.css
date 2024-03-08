@@ -15,8 +15,6 @@
     --colorgrislinea: #8c8b9b;
     --colornegro: #0B1215;
 
-
-
 }
 
 * {
@@ -193,7 +191,7 @@ body {
     transition: color 0.3s ease-in-out;
 }
 
-/* Login */
+/* Registro */
 
 .login-contenedor {
   

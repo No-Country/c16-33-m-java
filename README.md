@@ -119,19 +119,15 @@ Si aún sigues con dudas, no dejes de contactarte con nuestro E-xcelente equipo:
 
 
 ## Flow Chart
-
+ 
 
 ```mermaid
 graph LR
-A[Usuario] -- Registro --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-
-    A[Inicio] --> B[Página Principal];
-    B --> C[Búsqueda y Filtrado];
+A[Usuario]  
+    A[Inicio]
+    A --> C[Búsqueda y Filtrado];
     C --> D[Detalles del Producto];
     D --> E[Agregar al Carrito];
-    E --> F[Proceso de Pago];
+ E--	   
+    Registro--> F[Proceso de Pago];
     F --> G[Confirmación de Pedido];
-    
