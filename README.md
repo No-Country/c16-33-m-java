@@ -48,6 +48,9 @@ Para tu bici o empresa, existe un E-quipo con la E-nergía que tiene la solució
 
 # Acceso 
 
+[Video Promocional E-Bike  ](https://www.youtube.com/watch?v=BJ-98L7j0EA)
+
+
 <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Trello-512.png" alt="Trello" width="20" height="20"> [Trello](https://trello.com/b/TM5clMob/equipo-e-commerce-repuestos-de-bicicletas-espec%C3%ADfica) 
 
 #### 
